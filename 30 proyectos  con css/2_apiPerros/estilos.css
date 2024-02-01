@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.erorr{
+    color: red;
+}
+.contenedor{
+ 
+    height: 600px;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    border-radius: 20px;
+}
+.contenido-imagen{
+    height: 80%;
+    width: 100%;
+    
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center;
+    border-radius: 30px;
+}
+button{
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    font-size: 21px;
+    cursor: pointer;
+}
