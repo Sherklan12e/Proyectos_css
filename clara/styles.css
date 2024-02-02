@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 100%; /* Cambiado para que ocupe el 100% del ancho del viewport */
+    max-width: 500px; /* Establece un ancho máximo para evitar que el contenedor sea demasiado grande en pantallas grandes */
+    height: auto; /* Cambiado para que la altura se ajuste automáticamente al contenido */
+    background-color: aqua;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.imagen {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; /* Asegura que la imagen no se desborde del contenedor */
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Reglas de medios para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 768px) {
+    .contenedor {
+        max-width: 100%; /* Utiliza el 100% del ancho en pantallas más pequeñas */
+    }
+}
