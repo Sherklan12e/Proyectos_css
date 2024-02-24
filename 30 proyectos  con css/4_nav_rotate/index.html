@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navrotate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden; color: #222;
+  font-family: 'Lato', sans-sarif;
+  background-color: #333;
+}
+
+.container {
+  padding: 50px;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #fafafa;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.circle-container {
+  top: -100px;
+  left: -100px;
+  position: fixed;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #1e3df2;
+  transition: transform 0.5s linear;
+}
+
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
+.circle button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  height: 100px;
+  font-size: 26px;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.content h1 {
+  margin: 0;
+}
+
+.content small {
+  color: #555;
+  font-style: italic;
+}
+
+.content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+.content h3 {
+  margin-bottom: 20px;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 40px 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+  
+}
+
+nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+nav ul li + li {
+  transform: translateX(-150%);
+  margin-left: 15px;
+}
+
+nav ul li + li + li {
+  margin-left: 30px;
+  transform: translateX(-200%);
+}
+
+nav a {
+  color: #fafafa;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+nav a:hover {
+  color: #084fde;
+  font-weight: bold;
+}
+</style>
+
+<body>
+    <div class="container">
+        <div class="circle-container">
+          <div class="circle">
+            <button id="close">
+              <i class="fas fa-times"></i>
+            </button>
+            <button id="open">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+  
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur saepe ab atque expedita libero. Nobis eaque aut incidunt molestiae et, ab voluptatum expedita distinctio eveniet, quod sunt nesciunt veritatis pariatur. Quo perspiciatis voluptate aliquam illo totam reiciendis excepturi doloremque, dignissimos laudantium, doloribus dolorem! Quod officia modi doloribus ullam, possimus beatae iusto vero quibusdam exercitationem, veniam nihil quos eum voluptatum facere fugiat asperiores tempore assumenda corporis sunt voluptate amet? Beatae voluptatum corporis voluptate architecto, quidem vitae labore quia nesciunt cumque tempora sit totam quis maxime ad tempore suscipit quam iste voluptatibus dicta. Veniam laborum repellat dolorum dolor hic expedita modi praesentium?</p>
+      </div>
+  
+      <nav>
+        <ul>
+          <li>
+            <i class="fa fa-home"></i>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <i class="fas fa-user-alt"></i>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
+
+</body>
+<script>
+
+
+const close = document.getElementById('close');
+const open = document.getElementById('open');
+const container = document.querySelector('.container');
+
+open.addEventListener('click', () => container.classList.add('show-nav'));
+close.addEventListener('click', () => container.classList.remove('show-nav'));
+</script>
+
+
+
+</html>
