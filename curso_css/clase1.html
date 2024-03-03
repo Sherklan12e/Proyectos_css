@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .out{
+        display: grid;
+        background-color: red;
+        padding: 10px;
+        
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: auto auto;
+        column-gap: 40px;
+        row-gap: 20px;
+        align-items: center;
+    }
+    .out > div{
+        background-color: yellow;
+        padding: 10px;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+</style>
 <body>
     <div class="out">
         <div class="in" >1</div>
