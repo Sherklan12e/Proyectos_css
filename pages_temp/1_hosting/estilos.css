@@ -1,0 +1,183 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+
+}
+header{
+    width: 100%;
+    min-height: 88px;
+    background-color: rgb(255, 255, 255);
+    
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    z-index: 99;
+    padding:20px 40px;
+    background-color: aqua;
+}
+.logo-web-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.logo-host{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-web-nav div {
+    width: 100%;
+    
+}
+.arg-nav{
+    display: flex;
+    margin-left: 23px;
+    justify-content: start;
+    align-items: center;
+}
+.arg-nav div {
+    width: 32px;
+    height: 20px;
+    
+}
+.arg-nav img{
+    max-width: 100%;
+}
+.arg-nav p{
+    margin-left: 10px;
+    margin-right: 14px;
+    font-weight: 700;
+    
+}
+.options-nav{
+    font-weight: 100;
+    height: 72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+.word-nac{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.options-nav div{
+    padding: 6px;
+    margin-right: 20px;
+    
+}
+
+.options-nav div img{
+    max-width: 24px;
+    max-height: 24px;
+
+}
+.options-nav div a p{
+    color:  #1d1e20;
+    font-weight: 500;
+    
+}
+.options-nav div  p{
+    color:  #1d1e20;
+    font-weight: 500;
+    
+}
+.options-nav div a {
+    color:  #1d1e20;
+    font-weight: 500;
+    text-decoration: none;
+    
+}
+.toger-nav{
+    display: none;
+}
+
+.ingresar{
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.ingresar a{
+    padding: 4px 7px;
+}
+.dropdow{
+    width: 408px;
+    height: 212px;
+    background-color: rgb(235, 74, 74);
+    position: absolute;
+    top: 40px;
+    right: -166px;
+    
+}
+.punro{
+    width: 24px;
+    height:24px;
+    transform: rotate(45deg);
+    background-color: rgba(243, 99, 99, 0.785);
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.dro-1{
+    display: flex;
+    background-image: url("/pages_temp/1_hosting/images/ic-wordpress.svg");
+}
+.dro-2{
+    display: flex;
+    background-image: url("/pages_temp/1_hosting/images/ic-woocommerce.svg");
+}
+.dropdow div .alo {
+    width: 125px;
+    height: 39px;
+    background-color: aqua;
+    background-size: cover;
+    background-position: center; 
+}
+
+
+@media only screen and (min-width: 140px) and (max-width: 996px) {
+   
+    nav{background-color: rgb(25, 220, 28);}
+    .options-nav {
+        display: none;
+        
+    }
+    .toger-nav{
+        display: contents;
+
+    }
+    .toger-nav:hover{
+        cursor: pointer;
+    }
+    .toger-nav img{
+        width: 24px;
+        height: 24px;
+    }
+    nav{
+        padding:10px 30px;
+    }
+    .arg-nav{
+        display: none;
+    }
+    
+}
