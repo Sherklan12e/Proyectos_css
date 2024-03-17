@@ -193,29 +193,76 @@ nav{
 .dro{
     transition: transform 0.5s ease;
 }
-@media only screen and (min-width: 140px) and (max-width: 996px) {
-   
-    nav{background-color: rgb(25, 220, 28);}
-    .options-nav {
-        display: none;
-        
-    }
-    .toger-nav{
-        display: contents;
 
-    }
-    .toger-nav:hover{
-        cursor: pointer;
-    }
-    .toger-nav img{
-        width: 24px;
-        height: 24px;
-    }
-    nav{
-        padding:10px 30px;
+@media only screen and (min-width: 140px) and (max-width: 996px) {
+   .header{
+        position: relative;
     }
     .arg-nav{
+        font-size: 10px;
+    }
+    .toger-nav {
+        display: block; 
+        position: absolute;
+        cursor: pointer;
+        top: 17px;
+        right: 39px;
+        width: 23px;
+        height: 23px;
+        font-size: 30px;
+    }
+    #x-close{
         display: none;
     }
+    .logo-host img{
+        font-size: 10px;
+        width: 90px;
+    }
+    .toger-nav  img {
+        width: 23px;
+        height: 23px;
+
+    }
+    .dropdow{
+    width: 199px;
+    left:3px;
+    right: 100px;
+    }
+    .alo{
+        
+        display: none;
+    }
+    nav{
+        display: block;
+        position: relative;
+        background-color: aqua;
+    }
+    .options-nav {
+        margin: auto;
+        margin-top: 50px;
+        width: 89%;
+        height: 599px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        
+        display: none;
+    }
+    .a{
+        margin: 30px;
+    }
+    .options-nav.active {
+        display: flex;
+        flex-direction: column;
+    }
     
+}
+@media (min-width: 996px) {
+    #open-x {
+        display: none; /* Ocultar el botón burger en pantallas grandes */
+      }
+    
+      #x-close {
+        display: none; /* Mantener oculto el botón de cierre en pantallas grandes */
+      }
+    
+      
 }
