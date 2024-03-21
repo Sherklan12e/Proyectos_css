@@ -197,6 +197,7 @@ nav{
 @media only screen and (min-width: 140px) and (max-width: 996px) {
    .header{
         position: relative;
+        height: 100vh;
     }
     .arg-nav{
         font-size: 10px;
@@ -242,7 +243,6 @@ nav{
         margin-top: 50px;
         width: 89%;
         height: 599px;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
         
         display: none;
     }
@@ -252,17 +252,20 @@ nav{
     .options-nav.active {
         display: flex;
         flex-direction: column;
+        height: 100vh;
+    }
+    .navk{
+        height: 100vh;
     }
     
 }
 @media (min-width: 996px) {
     #open-x {
-        display: none; /* Ocultar el botón burger en pantallas grandes */
+        display: none; 
       }
     
       #x-close {
-        display: none; /* Mantener oculto el botón de cierre en pantallas grandes */
-      }
+        display: none; 
     
-      
+     }
 }
