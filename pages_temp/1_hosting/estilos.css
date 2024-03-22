@@ -355,6 +355,65 @@ nav {
     max-width: 100%;
 }
 
+/* 
+SPACES-GRID */
+
+
+
+.spaces-grid{
+    height: 260px;
+    padding-top: 100px;
+}
+.space-cont{
+    width: 96%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space-cont img{
+    width: 100%;
+}
+.space-opin{
+    width: 552px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.start-space{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+.start-space img{
+    width: 24px;
+    height: 24px;
+    transform: scale(1.5);
+}
+
+.space1{
+    width: 235px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.opi-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+.opi-c span{
+    font-weight: 700;
+}
 @media only screen and (min-width: 140px) and (max-width: 976px) {
     .midline .k .do{
         font-size: 26px;
@@ -396,11 +455,23 @@ nav {
         height: auto;
         max-width: 100%;
     }
+    .space-cont {
+        flex-direction: column;
+        gap: 100px;
+    }
+    .space-opin{
+        width: auto;
+    }
 
 }
 
 
-
+/* 
+texto cenro de ahi */
+.tex-cente-sec{
+    height: 600px;
+    background-color: aqua;
+}
 
 @media only screen and (min-width: 140px) and (max-width: 996px) {
     .header {
