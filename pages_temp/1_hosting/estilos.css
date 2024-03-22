@@ -194,6 +194,87 @@ nav{
     transition: transform 0.5s ease;
 }
 
+/* midline */
+
+.midline{
+    width: 100%;
+    height: 530px;
+    background-color: darkmagenta;
+}
+.midsec{
+    width: 80%;
+    margin-top: 60px;
+    height: 100%;
+    margin: auto;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.midsec1{
+    width: 50%;
+    height: 100%;
+    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    text-align: start;
+}
+.midsec1 .pa{
+    font-size: 20px;
+}
+.midsec1 .pa span{
+    font-weight: 700;
+    color: #673de6;
+}
+
+.midsec1 h2{
+    font-size: 36px;
+}
+.midsec1 h2 span{
+    font-weight: 700;
+    color: #673de6;
+}
+
+.midsec2{
+    width: 54.61%;
+    height: 100%;
+    background-color: darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 616px;
+    margin: auto;
+}
+
+.midsec2 img{
+    background-size: contain;
+    display: block;
+    height: auto;
+    max-width: 100%;
+} 
+
+@media only screen and (min-width: 140px) and (max-width: 976px) {
+    .midsec{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .midsec1{
+        width: 69%;
+        margin: auto;
+        
+    }
+    .midsec2{
+        width: 69%;
+        margin: auto;
+    }
+    
+}
+
 @media only screen and (min-width: 140px) and (max-width: 996px) {
    .header{
         position: relative;
