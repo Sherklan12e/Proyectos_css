@@ -366,6 +366,7 @@ SPACES-GRID */
 }
 .space-cont{
     width: 96%;
+    
     margin: auto;
     display: flex;
     justify-content: center;
@@ -414,7 +415,107 @@ SPACES-GRID */
 .opi-c span{
     font-weight: 700;
 }
+
+
+
+
+
+
+/* 
+texto cenro de ahi */
+.tex-cente-sec{
+    height: 550px;
+    background-color: rgb(192, 0, 250);
+    color: #fff;
+    
+}
+.div-cen{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    max-width: 1000px;
+    margin: auto;
+   
+    padding-top: 100px;
+    
+}
+.ini1{
+    width: 40.43%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: start;
+    margin-left: 20px;
+
+}
+.ini1 h2{
+    font-size: 32px;
+    color: #fff;
+}
+.ini1 p{
+    font-family: inherit;
+  font-size: 16px;
+}
+.ps{
+    margin-top: 50px;
+}
+.ini1 button{
+    width: 264px;
+    height: 48px;
+    font-size: 16px;
+    background-color:#ec5481;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+}
+.ini2{
+    width: 48.94%;
+}
+
+.ini2 img{
+    width: 100%;
+}
+
+
+
+
 @media only screen and (min-width: 140px) and (max-width: 976px) {
+    .div-cen{
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .ini1{
+        width: 98.94%;
+        justify-content: center;
+    }
+    .ini2{
+        width: 98.94%;
+        justify-content: center;
+    }
+    .ps{
+        margin: 0;
+    }
+
+    .ini1 button{
+        width: 264px;
+        height: 48px;
+        font-size: 16px;
+        background-color:#ec5481;
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+    }
+
+
+    .tex-cente-sec{
+        height: 890px;
+        background-color: blue;
+    }
+    .spaces-grid{
+        height: 600px;
+    }
     .midline .k .do{
         font-size: 26px;
     }
@@ -431,8 +532,10 @@ SPACES-GRID */
         height: auto;
     }
 
+
     .midsec1 {
         width: 99%;
+        height: auto;
         margin: auto;
         gap: 10px;
         justify-content: center;
@@ -458,20 +561,27 @@ SPACES-GRID */
     .space-cont {
         flex-direction: column;
         gap: 100px;
+        height: 100%;
+        display: flex;
     }
     .space-opin{
         width: auto;
+        
     }
 
 }
-
-
-/* 
-texto cenro de ahi */
-.tex-cente-sec{
-    height: 600px;
-    background-color: aqua;
+@media only screen and (min-width: 140px) and (max-width: 476px) {
+    .ini1{
+        width: 98.94%;
+        justify-content: center;
+    }
+    .ini2{
+        width: 98.94%;
+        margin-top: 59px;
+    }
 }
+
+
 
 @media only screen and (min-width: 140px) and (max-width: 996px) {
     .header {
