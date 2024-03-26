@@ -77,6 +77,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 15px;
     border: 0;
     font-weight: 100;
     margin: 0;
@@ -88,6 +89,7 @@ nav {
 .word-nac {
     display: flex;
     position: relative;
+    padding-right: 15px;
 
 }
 
@@ -559,8 +561,7 @@ CARD_MIDLI */
 
 
     .tex-cente-sec{
-        height: 1110px;
-        background-color: blue;
+        height: 810px;
     }
     .spaces-grid{
         height: 600px;
